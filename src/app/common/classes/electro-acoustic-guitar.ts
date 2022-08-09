@@ -23,7 +23,7 @@ export class ElectroAcousticGuitar implements IElectroGuitar, IAcousticGuitar{
         this.year = obj.year;
         this.stringCount = obj.stringCount;
         this.shape = obj.shape;
-        this.id = obj.id;
+        this.id = this.generateId();
         
     }
   

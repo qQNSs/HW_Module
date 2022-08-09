@@ -16,7 +16,7 @@ export class AcousticGuitar implements IAcousticGuitar{
         this.year = obj.year;
         this.stringCount = obj.stringCount;
         this.shape = obj.shape;
-        this.id = obj.id;
+        this.id = this.generateId();
     }
     generateId(): string {
         return 'A' + Date.now();
