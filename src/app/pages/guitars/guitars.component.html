@@ -1,0 +1,37 @@
+<div class="wrapper">
+    <div class="guitars">
+        <div class="acousticGuitar">
+            <p>Id: {{acousticGuitar.id}}</p>
+            <p>Mark: {{acousticGuitar.mark}}</p>
+            <p>Year: {{acousticGuitar.year}}</p>
+            <p>Guitar type: {{acousticGuitarType[acousticGuitar.acousticGuitarType]}}</p>
+            <p>Guitar shape: {{acousticGuitar.shape}}</p>
+            <p>String count: {{acousticGuitar.stringCount}}</p>
+            <p>Price: {{acousticGuitar.price}}$</p>
+
+        </div>
+        <div class="electroGuitar">
+            <p>Id: {{electroGuitar.id}}</p>
+            <p>Mark: {{electroGuitar.mark}}</p>
+            <p>Year: {{electroGuitar.year}}</p>
+            <p>Pickups count: {{electroGuitar.pickupsCount}}</p>
+            <span>Pickups:</span>
+            <span *ngFor="let item of electroGuitar.pickupsType">{{pickupsType[item]}} </span>
+            <p>Guitar shape: {{electroGuitar.shape}}</p>
+            <p>String count: {{electroGuitar.stringCount}}</p>
+            <p>Price: {{electroGuitar.price}}$</p>
+        </div>
+        <div class="electroAcousticGuitar">
+            <p>Id: {{electroAcousticGuitar.id}}</p>
+            <p>Mark: {{electroAcousticGuitar.mark}}</p>
+            <p>Year: {{electroAcousticGuitar.year}}</p>
+            <p>Guitar type: {{acousticGuitarType[electroAcousticGuitar.acousticGuitarType]}}</p>
+            <p>Pickups count: {{electroAcousticGuitar.pickupsCount}}</p>
+            <p>Pickups:</p>
+            <p *ngFor="let item of electroAcousticGuitar.pickupsType">{{pickupsType[item]}}</p>
+            <p>Guitar shape: {{electroAcousticGuitar.shape}}</p>
+            <p>String count: {{electroAcousticGuitar.stringCount}}</p>
+            <p>Price: {{electroAcousticGuitar.price}}$</p>
+        </div>
+    </div>
+</div>
